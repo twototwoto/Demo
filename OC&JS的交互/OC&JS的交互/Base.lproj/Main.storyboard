@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11201" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="824-JG-csn">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--未处理-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <webView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="HhX-0g-xrn">
+                                <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </webView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="HhX-0g-xrn" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="5gO-dE-Vqq"/>
+                            <constraint firstAttribute="bottomMargin" secondItem="HhX-0g-xrn" secondAttribute="bottom" id="Ff4-5g-kv1"/>
+                            <constraint firstItem="HhX-0g-xrn" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="topMargin" id="MKO-j7-Ov4"/>
+                            <constraint firstItem="HhX-0g-xrn" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="mG9-Mo-Fmc"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="未处理" id="08m-sv-iVw"/>
+                    <connections>
+                        <outlet property="webView" destination="HhX-0g-xrn" id="M0Y-Cg-Yko"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1996" y="123.68815592203899"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="wP0-fz-TWe">
+            <objects>
+                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="824-JG-csn" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" id="eY9-go-dFY">
+                        <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="HW3-pn-wTe" kind="relationship" relationship="viewControllers" id="tg9-3y-fMO"/>
+                        <segue destination="eWG-Er-oRL" kind="relationship" relationship="viewControllers" id="8Bi-dh-SEZ"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="cdr-tf-yc8" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="117.59999999999999" y="123.68815592203899"/>
+        </scene>
+        <!--应用JS处理-->
+        <scene sceneID="dlr-SL-XcB">
+            <objects>
+                <viewController id="NRt-Vs-x9z" customClass="JSHanledWebViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="87N-fF-zsK"/>
+                        <viewControllerLayoutGuide type="bottom" id="kqc-uY-C1h"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="lqy-ZC-1zZ">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <webView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Lxl-IQ-3Mq">
+                                <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </webView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="Lxl-IQ-3Mq" firstAttribute="top" secondItem="lqy-ZC-1zZ" secondAttribute="topMargin" id="JHq-cc-KPN"/>
+                            <constraint firstItem="Lxl-IQ-3Mq" firstAttribute="leading" secondItem="lqy-ZC-1zZ" secondAttribute="leadingMargin" id="d1U-IT-qb1"/>
+                            <constraint firstItem="Lxl-IQ-3Mq" firstAttribute="trailing" secondItem="lqy-ZC-1zZ" secondAttribute="trailingMargin" id="fs5-h6-N4f"/>
+                            <constraint firstAttribute="bottomMargin" secondItem="Lxl-IQ-3Mq" secondAttribute="bottom" id="xIh-0n-YaZ"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="应用JS处理" id="44L-YU-yJ0"/>
+                    <connections>
+                        <outlet property="webView" destination="Lxl-IQ-3Mq" id="6Vn-3f-gny"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="zLm-6z-D5G" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2008.8" y="-573.46326836581716"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="VWC-EO-6p8">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="HW3-pn-wTe" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" systemItem="mostViewed" id="Lhd-nT-md9"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="Ckc-rH-SY5">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="e65-Qe-TRh"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Pi7-GU-H3b" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1056.8" y="123.68815592203899"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="CP9-AV-6rd">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="eWG-Er-oRL" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" systemItem="mostViewed" id="ias-Vm-43k"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="4ji-l0-89q">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="NRt-Vs-x9z" kind="relationship" relationship="rootViewController" id="gOH-rC-ZqQ"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="iff-1v-F4w" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1069.5999999999999" y="-573.46326836581716"/>
+        </scene>
+    </scenes>
+</document>
