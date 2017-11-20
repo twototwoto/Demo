@@ -7,8 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		210EA6941FBFEBC200A2435E /* WWSingletonPattern.m in Sources */ = {isa = PBXBuildFile; fileRef = 210EA6931FBFEBC200A2435E /* WWSingletonPattern.m */; };
 		21CC6EA41FBFE8DB00D15C55 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 21CC6EA31FBFE8DB00D15C55 /* AppDelegate.m */; };
-		21CC6EA71FBFE8DB00D15C55 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 21CC6EA61FBFE8DB00D15C55 /* ViewController.m */; };
 		21CC6EAA1FBFE8DB00D15C55 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 21CC6EA81FBFE8DB00D15C55 /* Main.storyboard */; };
 		21CC6EAD1FBFE8DB00D15C55 /* WWDesignPattern.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 21CC6EAB1FBFE8DB00D15C55 /* WWDesignPattern.xcdatamodeld */; };
 		21CC6EAF1FBFE8DB00D15C55 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 21CC6EAE1FBFE8DB00D15C55 /* Assets.xcassets */; };
@@ -16,6 +16,7 @@
 		21CC6EB51FBFE8DB00D15C55 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 21CC6EB41FBFE8DB00D15C55 /* main.m */; };
 		21CC6EBF1FBFE8DB00D15C55 /* WWDesignPatternTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 21CC6EBE1FBFE8DB00D15C55 /* WWDesignPatternTests.m */; };
 		21CC6ECA1FBFE8DB00D15C55 /* WWDesignPatternUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 21CC6EC91FBFE8DB00D15C55 /* WWDesignPatternUITests.m */; };
+		21CC6ED91FBFE99500D15C55 /* WWDesignPatternViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 21CC6ED81FBFE99500D15C55 /* WWDesignPatternViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,11 +37,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		210EA6921FBFEBC200A2435E /* WWSingletonPattern.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WWSingletonPattern.h; sourceTree = "<group>"; };
+		210EA6931FBFEBC200A2435E /* WWSingletonPattern.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WWSingletonPattern.m; sourceTree = "<group>"; };
+		210EA6961FC06FBC00A2435E /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
 		21CC6E9F1FBFE8DB00D15C55 /* WWDesignPattern.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WWDesignPattern.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		21CC6EA21FBFE8DB00D15C55 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		21CC6EA31FBFE8DB00D15C55 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		21CC6EA51FBFE8DB00D15C55 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		21CC6EA61FBFE8DB00D15C55 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		21CC6EA91FBFE8DB00D15C55 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		21CC6EAC1FBFE8DB00D15C55 /* WWDesignPattern.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = WWDesignPattern.xcdatamodel; sourceTree = "<group>"; };
 		21CC6EAE1FBFE8DB00D15C55 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -53,6 +55,8 @@
 		21CC6EC51FBFE8DB00D15C55 /* WWDesignPatternUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WWDesignPatternUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		21CC6EC91FBFE8DB00D15C55 /* WWDesignPatternUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WWDesignPatternUITests.m; sourceTree = "<group>"; };
 		21CC6ECB1FBFE8DB00D15C55 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		21CC6ED71FBFE99500D15C55 /* WWDesignPatternViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WWDesignPatternViewController.h; sourceTree = "<group>"; };
+		21CC6ED81FBFE99500D15C55 /* WWDesignPatternViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WWDesignPatternViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -80,6 +84,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		210EA6911FBFEAE200A2435E /* Singleton */ = {
+			isa = PBXGroup;
+			children = (
+				210EA6921FBFEBC200A2435E /* WWSingletonPattern.h */,
+				210EA6931FBFEBC200A2435E /* WWSingletonPattern.m */,
+			);
+			path = Singleton;
+			sourceTree = "<group>";
+		};
+		210EA6951FC06F9500A2435E /* supportingFiles */ = {
+			isa = PBXGroup;
+			children = (
+				210EA6961FC06FBC00A2435E /* PrefixHeader.pch */,
+			);
+			path = supportingFiles;
+			sourceTree = "<group>";
+		};
 		21CC6E961FBFE8DB00D15C55 = {
 			isa = PBXGroup;
 			children = (
@@ -103,10 +124,12 @@
 		21CC6EA11FBFE8DB00D15C55 /* WWDesignPattern */ = {
 			isa = PBXGroup;
 			children = (
+				210EA6951FC06F9500A2435E /* supportingFiles */,
+				210EA6911FBFEAE200A2435E /* Singleton */,
+				21CC6ED71FBFE99500D15C55 /* WWDesignPatternViewController.h */,
+				21CC6ED81FBFE99500D15C55 /* WWDesignPatternViewController.m */,
 				21CC6EA21FBFE8DB00D15C55 /* AppDelegate.h */,
 				21CC6EA31FBFE8DB00D15C55 /* AppDelegate.m */,
-				21CC6EA51FBFE8DB00D15C55 /* ViewController.h */,
-				21CC6EA61FBFE8DB00D15C55 /* ViewController.m */,
 				21CC6EA81FBFE8DB00D15C55 /* Main.storyboard */,
 				21CC6EAE1FBFE8DB00D15C55 /* Assets.xcassets */,
 				21CC6EB01FBFE8DB00D15C55 /* LaunchScreen.storyboard */,
@@ -268,10 +291,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				21CC6EA71FBFE8DB00D15C55 /* ViewController.m in Sources */,
 				21CC6EA41FBFE8DB00D15C55 /* AppDelegate.m in Sources */,
 				21CC6EB51FBFE8DB00D15C55 /* main.m in Sources */,
 				21CC6EAD1FBFE8DB00D15C55 /* WWDesignPattern.xcdatamodeld in Sources */,
+				210EA6941FBFEBC200A2435E /* WWSingletonPattern.m in Sources */,
+				21CC6ED91FBFE99500D15C55 /* WWDesignPatternViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -436,6 +460,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = E6LSH6U6V8;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/WWDesignPattern/supportingFiles/PrefixHeader.pch";
 				INFOPLIST_FILE = WWDesignPattern/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = cn.ITCoderW.WWDesignPattern;
@@ -450,6 +475,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = E6LSH6U6V8;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/WWDesignPattern/supportingFiles/PrefixHeader.pch";
 				INFOPLIST_FILE = WWDesignPattern/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = cn.ITCoderW.WWDesignPattern;

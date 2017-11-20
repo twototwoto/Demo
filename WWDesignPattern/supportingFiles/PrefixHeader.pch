@@ -1,0 +1,38 @@
+//
+//  PrefixHeader.pch
+//  WWDesignPattern
+//
+//  Created by 王永旺永旺 on 2017/11/18.
+//  Copyright © 2017年 ITCoderW. All rights reserved.
+//
+
+#ifndef PrefixHeader_pch
+#define PrefixHeader_pch
+
+// Include any system framework and library headers here that should be included in all compilation units.
+// You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
+
+
+
+#if __OBJC__
+
+    #ifdef DEBUG
+        #define WWLog(fmt, ...) NSLog((@"%s [Line %d] " fmt), __PRETTY_FUNCTION__, __LINE__, ##__VA_ARGS__);
+    #else
+        #define WWLog(...)
+    #endif
+
+    #if __has_feature(objc_arc)
+        #define isARCWW  1
+        #define isMRCWW  0
+    #else
+        #define isARCWW  0
+        #define isMRCWW  1
+    #endif
+
+
+
+#endif
+
+
+#endif /* PrefixHeader_pch */

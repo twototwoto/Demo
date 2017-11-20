@@ -1,5 +1,5 @@
 //
-//  ViewController.h
+//  WWDesignPatternViewController.h
 //  WWDesignPattern
 //
 //  Created by 王永旺永旺 on 2017/11/18.
@@ -8,8 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController
-
+@interface WWDesignPatternViewController : UIViewController
 
 @end
-
